@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+    background: url(./media/momia-no-background.png) no-repeat center fixed;
+    background-size: cover;
+    background-color: rgb(159, 184, 173);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.header {
+    background-color: rgb(63, 64, 63);
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+body {
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-size: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgb(206,208,206);
+  color: #000000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+li:hover {
+  background-color: rgb(206,208,206);
+}
+
+a {
+    color: black;
+    font-size: 16px;
+}
+a:visited {
+    color: rgb(55, 55, 55);
+}
+
+.aside {
+  background-color: rgb(206,208,206);
+  padding: 12px;
+  color: #000000;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+article {
+    background-color: #ffffff54;
+    padding: 15px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.footer {
+  color: #ffffff;
+  text-align: right;
+  font-size: 12px;
+  padding: 12px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/* a la vista móvil */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.media {
+  background-image: url(./media/Museo_Canario_momia5.png);
+  background-size: 50%;
+  background-position: bottom;
+  color:rgb(11, 11, 11);
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+
+}
+
+label, input, textarea, select {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: rgb(206,208,206);
+  color: #000000;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+}
+
+h3 {
+  margin-top: 150px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.me {
+ background-color: #c0c0c08f;
+}
+
+.slider {
+  width: 70%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 30px;
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  height: 350px;
+  width: 400px;
+  margin-right: 50px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+

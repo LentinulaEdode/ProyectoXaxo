@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Xaxos canarios</title>
+    <link rel="shortcut icon" href="./media/pintadera.png" type="image/x-icon" />
+</head>
+<body>
+<div class="header">
+  <h1>Los 'Xaxos' de Canarias</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <nav>
+        <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./media.html">Media</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+
+<h3>Formulario de contacto</h3>
+
+ <div class="row"> 
+  <form class="col-8">
+    <label>Nombre:</label>
+    <input type="text" id="name" name="name" autofocus="autofocus" placeholder="Introduzca nombre..">
+    <label>¿Conocías la existencia de los <i>xaxos</i>?</label>
+    <label for="select-1">
+    <input type="radio" name="inp">Sí</input>
+    </label>
+    <label for="select-2">
+    <input type="radio" name="inp">No</input>
+    </label>
+    <label for="country">Selecciona el nivel de interés suscitado por este tema:</label>
+    <select id="interes" name="interes">
+      <option value="muyint">Muy interesade</option>
+      <option value="intri">Intrigade</option>
+      <option value="fasci">Fascinade</option>
+      <option value="aburri">Aburride</option>
+      <option value="intense">Intense</option>
+    </select>
+    <textarea id="comment" name="comment" placeholder="Deja aquí un pensamiento.."></textarea>
+    <div class="button">
+    <button type="reset" value="reset" id="reset">
+        Borrar
+    </button>
+    <button type="submit" value="submit" id="submit">
+        Enviar
+    </button>
+    </div>
+  </form>
+</div>
+</body>
+<div class="footer">
+    <p>FOTO MUNA.</p>
+</div>
+</html>
